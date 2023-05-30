@@ -1,0 +1,19 @@
+export function numberFormatWithoutUSD(num, options) {
+    let temp = 2;
+    if (num < 1 && num > 0.0001) {
+        temp = 4;
+    }
+    if (num < 0) {
+        temp = 1;
+    }
+    if (num < 0.0001) {
+        temp = 8;
+    }
+    let defaultOptions = {
+        maximumFractionDigits: temp,
+        minimumFractionDigits: 2,
+        notation: 'standard',
+        compactDisplay: 'long',
+    };
+    return new Intl.NumberFormat('en-US', { ...defaultOptions, ...options }).format(num);
+}

@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	/* overflow-x: hidden; */
+	/* background-color: #00204c; */
+}
+
+/* Styling the scrollbar */
+::-webkit-scrollbar {
+	width: 2px;
+	height: 2px;
+	background: transparent;
+}
+
+/* Styling the track of the scrollbar */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 2px #00204c;
+	border-radius: 4px;
+}
+
+/* Styling the thumb (the draggable scrolling handle) */
+::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 10px;
+}
+
+/* The thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #001b40;
+	border: 1px solid #002559;
+}

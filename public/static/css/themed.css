@@ -1,0 +1,36 @@
+:root:not(.theme-dark) {
+	--tv-color-platform-background: #cbced3;
+	--tv-color-pane-background: rgb(7, 7, 100);
+	--tv-color-pane-background-secondary: rgb(249, 185, 233);
+	--tv-color-toolbar-button-background-hover: rgb(244, 143, 177);
+	--tv-color-toolbar-button-background-secondary-hover: red;
+	--tv-color-toolbar-button-background-expanded: rgb(244, 143, 177);
+	--tv-color-toolbar-button-text: rgb(136, 24, 79);
+	--tv-color-toolbar-button-text-hover: rgb(74, 20, 140);
+	--tv-color-toolbar-button-text-active: red;
+	--tv-color-toolbar-button-text-active-hover: red;
+	--tv-color-item-active-text: rgb(6, 6, 255);
+	--tv-color-toolbar-toggle-button-background-active: red;
+	--tv-color-toolbar-toggle-button-background-active-hover: magenta;
+}
+/* 
+background: bitoro.100
+rgb(0,32,76): bitoro.1100(00204c)
+rgb(0,37,89): bitoro.1000
+rgb(0,43,102): bitoro.900()
+*/
+.theme-dark:root {
+	--tv-color-platform-background: #002559;
+	--tv-color-pane-background: rgb(0,32,76);
+	--tv-color-pane-background-secondary: rgb(46, 43, 207);
+	--tv-color-toolbar-button-background-hover: rgb(0,37,89);
+	--tv-color-toolbar-button-background-secondary-hover: red;
+	--tv-color-toolbar-button-background-expanded: rgb(244, 143, 177);
+	--tv-color-toolbar-button-text: rgb(234, 236, 250);
+	--tv-color-toolbar-button-text-hover: rgb(255, 255, 255);
+	--tv-color-toolbar-button-text-active: rgb(25, 74, 140);
+	--tv-color-toolbar-button-text-active-hover: rgb(25, 74, 140);
+	--tv-color-item-active-text: rgb(0,37,89);
+	--tv-color-toolbar-toggle-button-background-active: rgb(0,37,89);
+	--tv-color-toolbar-toggle-button-background-active-hover: magenta;
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "icon": "https://content-api.changenow.io/uploads/btc_d8db07f87d.svg",
+    "name": "Bitcoin",
+    "ticker": "BTC",
+    "description": "$100 or $1,000,000 position, the price impact will always be 0%"
+  },
+  {
+    "id": "2",
+    "icon": "https://content-api.changenow.io/uploads/ethbsc_9aef8d5bf4.svg",
+    "name": "Ethereum",
+    "ticker": "ETH",
+    "description": "$100 or $1,000,000 position, the price impact will always be 0%"
+  },
+  {
+    "id": "3",
+    "icon": "https://content-api.changenow.io/uploads/uni_e7f3b91b33.svg",
+    "name": "Uniswap",
+    "ticker": "UNI",
+    "description": "$100 or $1,000,000 position, the price impact will always be 0%"
+  }
+]
