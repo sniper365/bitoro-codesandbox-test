@@ -11,7 +11,6 @@ import {
   useDisclosure
 } from '@chakra-ui/react'
 
-import MarketHeadline from "src/components/marketHeadline";
 import { Trans } from "react-i18next";
 
 const Home = () => {
