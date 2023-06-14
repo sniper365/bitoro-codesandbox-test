@@ -2,10 +2,9 @@ import * as React from "react"
 import { Provider } from 'react-redux';
 import { I18nextProvider } from 'react-i18next'
 import { ChakraProvider } from '@chakra-ui/react'
-import merge from 'lodash.merge';
-import { getDefaultWallets, RainbowKitProvider, darkTheme, Theme } from '@rainbow-me/rainbowkit';
+import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
-import { mainnet, polygon, optimism, arbitrum, goerli } from 'wagmi/chains';
+import { mainnet } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import { store } from './state/store';
 import { Router } from './Router'
@@ -37,23 +36,23 @@ const wagmiConfig = createConfig({
 });
 
 
-const myTheme = merge(darkTheme({
-  borderRadius: 'small'
-}), {
-  colors: {
-    accentColor: '#003680',
-    connectButtonBackground: '#003680',
-    modalBackground: '#003680',
-    connectButtonInnerBackground: '#003680',
-    modalText: 'white'
-  },
-  // radii: {
-  //   connectButton: 'none'
-  // },
-  fonts: {
-    body: '20px'
-  }
-} as Theme);
+// const myTheme = merge(darkTheme({
+//   borderRadius: 'small'
+// }), {
+//   colors: {
+//     accentColor: '#003680',
+//     connectButtonBackground: '#003680',
+//     modalBackground: '#003680',
+//     connectButtonInnerBackground: '#003680',
+//     modalText: 'white'
+//   },
+//   // radii: {
+//   //   connectButton: 'none'
+//   // },
+//   fonts: {
+//     body: '20px'
+//   }
+// } as Theme);
 
 export const App = () => {
   const { language } = useLanguage()
@@ -65,7 +64,6 @@ export const App = () => {
       <WagmiConfig config={wagmiConfig}>
         <RainbowKitProvider
           chains={chains}
-          theme={myTheme}
         >
           <ChakraProvider theme={theme}>
             <Provider store={store}>
